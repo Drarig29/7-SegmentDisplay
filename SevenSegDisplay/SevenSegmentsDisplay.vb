@@ -159,7 +159,7 @@ Public Class SevenSegmentsDisplay
 
 #Region " Properties "
 
-    <RefreshProperties(RefreshProperties.All)> <Description("Détermine le nombre de chiffres qu'affiche le contrôle."), Category("Apparence")> _
+    <RefreshProperties(RefreshProperties.All)> <Description("Determines the number of digits displayed by the control."), Category("Appearence")> _
     Public Property Digits As Integer
         Get
             Return _digits
@@ -182,7 +182,7 @@ Public Class SevenSegmentsDisplay
         End Set
     End Property
 
-    <Description("Indique si les segments doivent avoir une bordure."), Category("")> Public Overloads Property BorderStyle As BorderStyle
+    <Description("Indicates the segments' border style of the control."), Category("Appearence")> Public Overloads Property BorderStyle As BorderStyle
         Get
             Return _borderStyle
         End Get
@@ -195,7 +195,7 @@ Public Class SevenSegmentsDisplay
         End Set
     End Property
 
-    <Description("Détermine la valeur affichée sur le contrôle."), Category("Données")> Public Property Value As Integer
+    <Description("The displayed value on the control."), Category("Appearence")> Public Property Value As Integer
         Get
             Return _value
         End Get
@@ -208,7 +208,7 @@ Public Class SevenSegmentsDisplay
         End Set
     End Property
 
-    <Description("Détermine si les segments désactivés sont cachés."), Category("Apparence")> Public Property HideOffSegments As Boolean
+    <Description("Determines whether deactivated segments are hidden or not."), Category("Appearence")> Public Property HideOffSegments As Boolean
         Get
             Return _hideOffSegments
         End Get
@@ -221,7 +221,7 @@ Public Class SevenSegmentsDisplay
         End Set
     End Property
 
-    <Description("Détermine la couleur d'un segment activé."), Category("Apparence")> Public Property SegmentOnColor As Color
+    <Description("The activated segments' color of the control."), Category("Appearence")> Public Property SegmentOnColor As Color
         Get
             Return _segmentOnColor
         End Get
@@ -234,7 +234,7 @@ Public Class SevenSegmentsDisplay
         End Set
     End Property
 
-    <Description("Détermine la couleur d'un segment désactivé."), Category("Apparence")> Public Property SegmentOffColor As Color
+    <Description("The deactivated segments' color of the control."), Category("Appearence")> Public Property SegmentOffColor As Color
         Get
             Return _segmentOffColor
         End Get
@@ -810,7 +810,7 @@ Public Class SmartTags
         items.Add(New DesignerActionHeaderItem("Properties"))
         items.Add(New DesignerActionPropertyItem("Digits", "Number of digits"))
         items.Add(New DesignerActionPropertyItem("Value", "Value to display"))
-        items.Add(New DesignerActionPropertyItem("BorderStyle", "Borders style"))
+        items.Add(New DesignerActionPropertyItem("BorderStyle", "Segments border style"))
         items.Add(New DesignerActionPropertyItem("HideOffSegments", "Hide deactivated segments"))
         items.Add(New DesignerActionPropertyItem("SegmentOnColor", "Activated segments' color"))
         items.Add(New DesignerActionPropertyItem("SegmentOffColor", "Deactivated segments' color"))
