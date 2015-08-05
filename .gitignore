@@ -230,3 +230,5 @@ Demo/bin/Release/Demo.xml
 Demo/bin/Release/SevenSegDisplay.dll
 Demo/bin/Release/SevenSegDisplay.xml
 SevenSegDisplay/bin/Release/SevenSegDisplay.xml
+Demo/bin/Release/Demo.vshost.exe
+Demo/bin/Release/Demo.vshost.exe.manifest
