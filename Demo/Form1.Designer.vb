@@ -39,11 +39,9 @@ Partial Class Form1
         Me.Digits = New System.Windows.Forms.NumericUpDown()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.SevenSegmentsDisplay1 = New SevenSegDisplay.SevenSegmentsDisplay()
         CType(Me.ControlValue, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.Digits, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'ControlValue
@@ -201,26 +199,12 @@ Partial Class Form1
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.SevenSegmentsDisplay1)
         Me.GroupBox2.Location = New System.Drawing.Point(11, 170)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(400, 174)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Viewer"
-        '
-        'SevenSegmentsDisplay1
-        '
-        Me.SevenSegmentsDisplay1.BackColor = System.Drawing.Color.Black
-        Me.SevenSegmentsDisplay1.Digits = 4
-        Me.SevenSegmentsDisplay1.HideOffSegments = False
-        Me.SevenSegmentsDisplay1.Location = New System.Drawing.Point(43, 26)
-        Me.SevenSegmentsDisplay1.Name = "SevenSegmentsDisplay1"
-        Me.SevenSegmentsDisplay1.SegmentOffColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.SevenSegmentsDisplay1.SegmentOnColor = System.Drawing.Color.Red
-        Me.SevenSegmentsDisplay1.Size = New System.Drawing.Size(314, 132)
-        Me.SevenSegmentsDisplay1.TabIndex = 0
-        Me.SevenSegmentsDisplay1.Value = 42
         '
         'Form1
         '
@@ -238,10 +222,10 @@ Partial Class Form1
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.Digits, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
+
     Friend WithEvents ControlValue As System.Windows.Forms.NumericUpDown
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
@@ -259,6 +243,5 @@ Partial Class Form1
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Digits As System.Windows.Forms.NumericUpDown
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents SevenSegmentsDisplay1 As SevenSegDisplay.SevenSegmentsDisplay
 
 End Class

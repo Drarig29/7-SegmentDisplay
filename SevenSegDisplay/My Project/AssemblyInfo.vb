@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Passez en revue les valeurs des attributs de l'assembly
 
-<Assembly: AssemblyTitle("SevenSegDisplay")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("SevenSegDisplay")> 
+<Assembly: AssemblyTitle("SevenSegmentsDisplay")> 
+<Assembly: AssemblyDescription("A 7-segment display control.")> 
+<Assembly: AssemblyCompany("Drarig29' Softwares")> 
+<Assembly: AssemblyProduct("SevenSegmentsDisplay")> 
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' en utilisant '*', comme indiqué ci-dessous :
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("2.5.0.0")> 
+<Assembly: AssemblyFileVersion("2.5.0.0")> 

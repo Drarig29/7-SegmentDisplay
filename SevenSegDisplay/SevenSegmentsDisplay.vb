@@ -1,12 +1,13 @@
-﻿Imports System.ComponentModel
-Imports System.Runtime.CompilerServices
-Imports System.Drawing
-Imports System.Windows.Forms
+﻿Imports System.Runtime.CompilerServices
 Imports System.ComponentModel.Design
+Imports System.Windows.Forms.Design
+Imports System.ComponentModel
+Imports System.Windows.Forms
+Imports System.Drawing
 
-<Designer(GetType(Designer))> _
+<Designer(GetType(Designer)), ToolboxBitmap(GetType(SevenSegmentsDisplay), "ControlIcon.ico")> _
 Public Class SevenSegmentsDisplay
-    'Inherits a empty UserControl. 
+    'Inherits a empty UserControl.
     Inherits System.Windows.Forms.UserControl
 
     'Declares a few variables.
@@ -23,9 +24,9 @@ Public Class SevenSegmentsDisplay
         InitializeComponent()
 
         'Assigns values to variables.
-        Me.BackColor = Color.Black
-        SegmentOnColor = Color.Red
         SegmentOffColor = Color.FromArgb(20, 20, 20)
+        SegmentOnColor = Color.Red
+        BackColor = Color.Black
         HideOffSegments = False
         Digits = 2
         Value = 42
@@ -48,10 +49,10 @@ Public Class SevenSegmentsDisplay
     Private Sub SetSize()
 
         '74 pixels is the first digit width, and we add the number of digits - 1 (zero-based) * 80.
-        'Illusatration :  - If 1 digit has to be displayed --> 74 + (1 - 1) * 80 = 74
-        '                 - Si 2 digits have to be displayed --> 74 + (2 - 1) * 80 = 154
-        '                 - Si 3 digits have to be displayed --> 74 + (3 - 1) * 80 = 234
-        '                 - Si 4 digits have to be displayed --> 74 + (4 - 1) * 80 = 314
+        'Illusatration :  - If 1 digit has to be displayed    --> 74 + (1 - 1) * 80 = 74
+        '                 - Si 2 digits have to be displayed  --> 74 + (2 - 1) * 80 = 154
+        '                 - Si 3 digits have to be displayed  --> 74 + (3 - 1) * 80 = 234
+        '                 - Si 4 digits have to be displayed  --> 74 + (4 - 1) * 80 = 314
         Me.Size = New Size(74 + Digits.ZeroBased * 80, 132)
 
         'Executes following action only if the control is loaded.
@@ -701,7 +702,7 @@ Public Class SmartTags
     Private DesignerActionUISvc As DesignerActionUIService = Nothing
 
     'For more information, visit these links.
-    'https://openclassrooms.com/courses/developper-son-propre-controle-utilisateur-winforms#/id/r-551549
+    'https://msdn.microsoft.com/en-us/library/aa302342.aspx?f=255&MSPPError=-2147217396
     'https://msdn.microsoft.com/en-us/library/ms171829.aspx?f=255&MSPPError=-2147217396
 
     Sub New(component As IComponent)
@@ -801,7 +802,7 @@ Public Class SmartTags
     End Property
 
 #End Region
-    
+
     Public Overrides Function GetSortedActionItems() As DesignerActionItemCollection
         'We create an ItemCollection for our SmartTag.
         Dim items As New DesignerActionItemCollection()
@@ -820,6 +821,40 @@ Public Class SmartTags
     End Function
 
 End Class
+
+Public Class Designer
+    Inherits ControlDesigner
+
+    Public Overrides ReadOnly Property SelectionRules() As SelectionRules
+        Get
+            Dim mc As SevenSegmentsDisplay = MyBase.Control
+
+            If mc.LockSize Then
+                Return MyBase.SelectionRules And Not SelectionRules.AllSizeable
+            Else
+                Return MyBase.SelectionRules
+            End If
+        End Get
+    End Property
+
+    Public Overrides ReadOnly Property ActionLists() As DesignerActionListCollection
+        Get
+            'Creates a new collection for our actions.
+            Dim list As New DesignerActionListCollection()
+
+            'Gets all the properties
+            Dim designList As New SmartTags(Me.Control)
+
+            'Adds the properties with designList.
+            list.Add(designList)
+
+            'Returns the filled collection.
+            Return list
+        End Get
+    End Property
+
+End Class
+
 
 Module Extensions
 

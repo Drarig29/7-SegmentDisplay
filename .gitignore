@@ -232,3 +232,5 @@ Demo/bin/Release/SevenSegDisplay.xml
 SevenSegDisplay/bin/Release/SevenSegDisplay.xml
 Demo/bin/Release/Demo.vshost.exe
 Demo/bin/Release/Demo.vshost.exe.manifest
+Icon.png
+ControlIcon.ico
