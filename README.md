@@ -2,9 +2,9 @@
 ## Description
 This is a **VB.NET WinForms Control** (.dll).<br>
 ![ControlPreview](https://dl.dropboxusercontent.com/s/9ytak1vcg684m2y/SevenSegDisplay.png)
-<br>The library is called **SevenSegmentsDisplay**. It doesn't necessarily make much sense, given that we can use fonts with a "digital style". But I wanted to do this myself, in a way that is not necessarily the best, of course!<br>I accept the recommendations but I won't force myself to make changes...
+<br>The library is called **SevenSegmentsDisplay**. It doesn't necessarily make much sense, given that we can use fonts with a "digital style". But **I wanted to do this myself**, in a way that is not necessarily the best, of course!<br>**I accept the recommendations but I won't force myself to make changes**...
 
-A demo form is included so you can easily see how it works.<br><br>
+A [demo form](https://github.com/Drarig29/7-SegmentDisplay/tree/master/Demo) is included so you can easily see how it works.<br><br>
 ![DemoFormPreview](https://dl.dropboxusercontent.com/s/1b59ju3pcx91fqn/DemoForm.png)
 
 ##Properties
@@ -25,7 +25,7 @@ Of course, it has events :
 * **SegmentsOnColorChanged** - Fired when SegmentsOnColor property is changed.
 * **SegmentsOffColorChanged** - Fired when SegmentsOffColor property is changed.
 
-`Public Event ValueChanged As EventHandler`
+`Public Event ValueChanged As EventHandler`<br>
 `Public Event DigitsChanged As EventHandler`<br>
 `Public Event BorderStyleChanged As EventHandler`<br>
 `Public Event HideOffSegmentsChanged As EventHandler`<br>
@@ -37,7 +37,7 @@ It also has [SmartTags](https://msdn.microsoft.com/en-us/library/ms171829.aspx?f
 ![SmartTagsPreview](https://dl.dropboxusercontent.com/s/l59bdn8vig348ae/SmartTags.png)
 
 ##How to use
-To use this control, [download it](https://raw.githubusercontent.com/Drarig29/7-SegmentDisplay/master/SevenSegDisplay/bin/Release/SevenSegDisplay.dll), and add it to the Toolbox :<br>
+To use this control, [download it](https://raw.githubusercontent.com/Drarig29/7-SegmentDisplay/master/SevenSegDisplay/bin/Release/SevenSegDisplay.dll), and **add it to the Toolbox** :<br>
 * Right-click on the Toolbox,
 * Select "Choose Items...",
 * Wait for the loading, and click "Browse...",
@@ -45,6 +45,6 @@ To use this control, [download it](https://raw.githubusercontent.com/Drarig29/7-
 * Click OK, then it's added to Toolbox.
 
 ##About
-Lastest version : 2.5<br><br>
+**Lastest version** : 2.5<br><br>
 Good use!<br>
 If you have problems, you can [contact me](mailto:corentinleguitariste@hotmail.fr).
