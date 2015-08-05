@@ -45,6 +45,6 @@ To use this control, [download it](https://raw.githubusercontent.com/Drarig29/7-
 * Click OK, then it's added to Toolbox.
 
 ##About
-**Lastest version** : 2.5<br><br>
+**Latest version** : 2.5<br><br>
 Good use!<br>
 If you have problems, you can [contact me](mailto:corentinleguitariste@hotmail.fr).
