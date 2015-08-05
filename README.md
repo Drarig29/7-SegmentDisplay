@@ -22,8 +22,10 @@ Of course, it has events :
 * **DigitsChanged** - Fired when Digits property is changed.
 * **BorderStyleChanged** - Fired when BorderStyle property is changed.
 * **HideOffSegmentsChanged** - Fired when HideOffSegments property is changed.
+* **SegmentsOnColorChanged** - Fired when SegmentsOnColor property is changed.
+* **SegmentsOffColorChanged** - Fired when SegmentsOffColor property is changed.
 
-  `Public Event ValueChanged As EventHandler`<br>
+  `Public Event ValueChanged As EventHandler`
   `Public Event DigitsChanged As EventHandler`<br>
   `Public Event BorderStyleChanged As EventHandler`<br>
   `Public Event HideOffSegmentsChanged As EventHandler`<br>
@@ -43,6 +45,6 @@ To use this control, [download it](https://raw.githubusercontent.com/Drarig29/7-
 * Click OK, then it's added to Toolbox.
 
 ##About
-Lastest version : 2.5<br><br>
+Lastest version : 2.5<br>
 Good use!<br>
 If you have problems, you can [contact me](mailto:corentinleguitariste@hotmail.fr).
