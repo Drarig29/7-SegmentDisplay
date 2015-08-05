@@ -25,12 +25,12 @@ Of course, it has events :
 * **SegmentsOnColorChanged** - Fired when SegmentsOnColor property is changed.
 * **SegmentsOffColorChanged** - Fired when SegmentsOffColor property is changed.
 
-  `Public Event ValueChanged As EventHandler`
-  `Public Event DigitsChanged As EventHandler`<br>
-  `Public Event BorderStyleChanged As EventHandler`<br>
-  `Public Event HideOffSegmentsChanged As EventHandler`<br>
-  `Public Event SegmentsOnColorChanged As EventHandler`<br>
-  `Public Event SegmentsOffColorChanged As EventHandler`<br>
+`Public Event ValueChanged As EventHandler`
+`Public Event DigitsChanged As EventHandler`<br>
+`Public Event BorderStyleChanged As EventHandler`<br>
+`Public Event HideOffSegmentsChanged As EventHandler`<br>
+`Public Event SegmentsOnColorChanged As EventHandler`<br>
+`Public Event SegmentsOffColorChanged As EventHandler`<br>
 
 ##SmartTags
 It also has [SmartTags](https://msdn.microsoft.com/en-us/library/ms171829.aspx?f=255&MSPPError=-2147217396), which makes it **very intuitive at Design Time**.<br><br>
@@ -45,6 +45,6 @@ To use this control, [download it](https://raw.githubusercontent.com/Drarig29/7-
 * Click OK, then it's added to Toolbox.
 
 ##About
-Lastest version : 2.5<br>
+Lastest version : 2.5<br><br>
 Good use!<br>
 If you have problems, you can [contact me](mailto:corentinleguitariste@hotmail.fr).
