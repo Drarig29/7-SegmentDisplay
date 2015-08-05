@@ -807,13 +807,13 @@ Public Class SmartTags
         Dim items As New DesignerActionItemCollection()
 
         'We add properties to the collection.
-        items.Add(New DesignerActionHeaderItem("Propriétés"))
-        items.Add(New DesignerActionPropertyItem("Digits", "Nombre de chiffres"))
-        items.Add(New DesignerActionPropertyItem("Value", "Valeur à afficher"))
-        items.Add(New DesignerActionPropertyItem("BorderStyle", "Style des bordures"))
-        items.Add(New DesignerActionPropertyItem("HideOffSegments", "Cacher les segments désactivés"))
-        items.Add(New DesignerActionPropertyItem("SegmentOnColor", "Couleur des segments activés"))
-        items.Add(New DesignerActionPropertyItem("SegmentOffColor", "Couleur des segments désactivés"))
+        items.Add(New DesignerActionHeaderItem("Properties"))
+        items.Add(New DesignerActionPropertyItem("Digits", "Number of digits"))
+        items.Add(New DesignerActionPropertyItem("Value", "Value to display"))
+        items.Add(New DesignerActionPropertyItem("BorderStyle", "Borders style"))
+        items.Add(New DesignerActionPropertyItem("HideOffSegments", "Hide deactivated segments"))
+        items.Add(New DesignerActionPropertyItem("SegmentOnColor", "Activated segments' color"))
+        items.Add(New DesignerActionPropertyItem("SegmentOffColor", "Deactivated segments' color"))
 
         'We return the filled collection.
         Return items
