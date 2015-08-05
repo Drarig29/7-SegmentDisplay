@@ -17,5 +17,12 @@ It has mainly 6 properties :<br>
 It also has [SmartTags](https://msdn.microsoft.com/en-us/library/ms171829.aspx?f=255&MSPPError=-2147217396), which makes it **very intuitive at Design Time**.<br><br>
 ![SmartTagsPreview](https://dl.dropboxusercontent.com/s/l59bdn8vig348ae/SmartTags.png)
 
+To use this control, [download it](https://raw.githubusercontent.com/Drarig29/7-SegmentDisplay/master/SevenSegDisplay/bin/Release/SevenSegDisplay.dll), and add it to the Toolbox :<br>
+* Right-click on the Toolbox,
+* Select "Choose Items...",
+* Wait for the loading, and click "Browse...",
+* Choose the control (.dll file),
+* Click OK, then it's added to Toolbox.
+
 Good use!<br>
 If you have problems, you can [contact me](mailto:corentinleguitariste@hotmail.fr).
