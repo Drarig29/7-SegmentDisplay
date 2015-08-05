@@ -14,7 +14,7 @@ It has mainly 6 properties :<br>
 * **SegmentOnColor** - Activated segments' color.
 * **SegmentOffColor** - Deactivated segments' color.
 
-It aslo has [SmartTags](https://msdn.microsoft.com/en-us/library/ms171829.aspx?f=255&MSPPError=-2147217396), which makes it **very intuitive at Design Time**.<br><br>
+It also has [SmartTags](https://msdn.microsoft.com/en-us/library/ms171829.aspx?f=255&MSPPError=-2147217396), which makes it **very intuitive at Design Time**.<br><br>
 ![SmartTagsPreview](https://dl.dropboxusercontent.com/s/l59bdn8vig348ae/SmartTags.png)
 
 Good use!<br>
