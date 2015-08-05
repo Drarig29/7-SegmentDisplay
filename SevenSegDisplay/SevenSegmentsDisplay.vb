@@ -896,7 +896,6 @@ Public Class Designer
 
 End Class
 
-
 Module Extensions
 
     'Extension for the Integer datatype which returns the zero-based value.
