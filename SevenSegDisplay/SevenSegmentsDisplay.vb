@@ -158,6 +158,17 @@ Public Class SevenSegmentsDisplay
         Next
     End Sub
 
+#Region " Events "
+
+    Public Event SegmentsOffColorChanged As EventHandler
+    Public Event SegmentsOnColorChanged As EventHandler
+    Public Event HideOffSegmentsChanged As EventHandler
+    Public Event BorderStyleChanged As EventHandler
+    Public Event DigitsChanged As EventHandler
+    Public Event ValueChanged As EventHandler
+
+#End Region
+
 #Region " Properties "
 
     <RefreshProperties(RefreshProperties.All)> <Description("Determines the number of digits displayed by the control."), Category("Appearence")> _
@@ -180,6 +191,9 @@ Public Class SevenSegmentsDisplay
 
             'We set the control's size.
             SetSize()
+
+            'We raise DigitsChanged event.
+            RaiseEvent DigitsChanged(Me, EventArgs.Empty)
         End Set
     End Property
 
@@ -193,6 +207,9 @@ Public Class SevenSegmentsDisplay
 
             'We set all segments' BorderStyle property.
             SetBorderStyle(value)
+
+            'We raise BorderStyleChanged event.
+            RaiseEvent BorderStyleChanged(Me, EventArgs.Empty)
         End Set
     End Property
 
@@ -206,6 +223,9 @@ Public Class SevenSegmentsDisplay
 
             'We update the segments to display Value.
             ChangeValue()
+
+            'We raise ValueChanged event.
+            RaiseEvent ValueChanged(Me, EventArgs.Empty)
         End Set
     End Property
 
@@ -219,6 +239,9 @@ Public Class SevenSegmentsDisplay
 
             'We update the segments to display Value.
             ChangeValue()
+
+            'We raise HideOffSegmentsChanged event.
+            RaiseEvent HideOffSegmentsChanged(Me, EventArgs.Empty)
         End Set
     End Property
 
@@ -232,6 +255,9 @@ Public Class SevenSegmentsDisplay
 
             'We change activated segments' color.
             ChangeSegmentsOnColor(value)
+
+            'We raise SegmentsOnColorChanged event.
+            RaiseEvent SegmentsOnColorChanged(Me, EventArgs.Empty)
         End Set
     End Property
 
@@ -248,6 +274,9 @@ Public Class SevenSegmentsDisplay
 
             'We update the segments to display Value.
             ChangeValue()
+
+            'We raise SegmentsOffColorChanged event.
+            RaiseEvent SegmentsOffColorChanged(Me, EventArgs.Empty)
         End Set
     End Property
 
