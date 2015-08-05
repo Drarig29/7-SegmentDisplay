@@ -192,8 +192,10 @@ Public Class SevenSegmentsDisplay
             'We set the control's size.
             SetSize()
 
-            'We raise DigitsChanged event.
-            RaiseEvent DigitsChanged(Me, EventArgs.Empty)
+            'We raise DigitsChanged event., only if the control is loaded.
+            If Loaded Then
+                RaiseEvent DigitsChanged(Me, EventArgs.Empty)
+            End If
         End Set
     End Property
 
@@ -208,8 +210,10 @@ Public Class SevenSegmentsDisplay
             'We set all segments' BorderStyle property.
             SetBorderStyle(value)
 
-            'We raise BorderStyleChanged event.
-            RaiseEvent BorderStyleChanged(Me, EventArgs.Empty)
+            'We raise BorderStyleChanged event., only if the control is loaded.
+            If Loaded Then
+                RaiseEvent BorderStyleChanged(Me, EventArgs.Empty)
+            End If
         End Set
     End Property
 
@@ -224,8 +228,10 @@ Public Class SevenSegmentsDisplay
             'We update the segments to display Value.
             ChangeValue()
 
-            'We raise ValueChanged event.
-            RaiseEvent ValueChanged(Me, EventArgs.Empty)
+            'We raise ValueChanged event., only if the control is loaded.
+            If Loaded Then
+                RaiseEvent ValueChanged(Me, EventArgs.Empty)
+            End If
         End Set
     End Property
 
@@ -240,8 +246,10 @@ Public Class SevenSegmentsDisplay
             'We update the segments to display Value.
             ChangeValue()
 
-            'We raise HideOffSegmentsChanged event.
-            RaiseEvent HideOffSegmentsChanged(Me, EventArgs.Empty)
+            'We raise HideOffSegmentsChanged event., only if the control is loaded.
+            If Loaded Then
+                RaiseEvent HideOffSegmentsChanged(Me, EventArgs.Empty)
+            End If
         End Set
     End Property
 
@@ -256,8 +264,10 @@ Public Class SevenSegmentsDisplay
             'We change activated segments' color.
             ChangeSegmentsOnColor(value)
 
-            'We raise SegmentsOnColorChanged event.
-            RaiseEvent SegmentsOnColorChanged(Me, EventArgs.Empty)
+            'We raise SegmentsOnColorChanged event., only if the control is loaded.
+            If Loaded Then
+                RaiseEvent SegmentsOnColorChanged(Me, EventArgs.Empty)
+            End If
         End Set
     End Property
 
@@ -275,8 +285,10 @@ Public Class SevenSegmentsDisplay
             'We update the segments to display Value.
             ChangeValue()
 
-            'We raise SegmentsOffColorChanged event.
-            RaiseEvent SegmentsOffColorChanged(Me, EventArgs.Empty)
+            'We raise SegmentsOffColorChanged event, only if the control is loaded.
+            If Loaded Then
+                RaiseEvent SegmentsOffColorChanged(Me, EventArgs.Empty)
+            End If
         End Set
     End Property
 

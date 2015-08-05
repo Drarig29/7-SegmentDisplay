@@ -55,7 +55,31 @@
         Digits.Value = SevenSegmentsDisplay1.Digits
     End Sub
 
+    Private Sub SevenSegmentsDisplay1_BackColorChanged(sender As Object, e As EventArgs) Handles SevenSegmentsDisplay1.BackColorChanged
+        Console.WriteLine("BackColor property changed.")
+    End Sub
+
     Private Sub SevenSegmentsDisplay1_SegmentsOffColorChanged(sender As Object, e As EventArgs) Handles SevenSegmentsDisplay1.SegmentsOffColorChanged
-        MsgBox("")
+        Console.WriteLine("SegmentsOffColor property changed.")
+    End Sub
+
+    Private Sub SevenSegmentsDisplay1_HideOffSegmentsChanged(sender As Object, e As EventArgs) Handles SevenSegmentsDisplay1.HideOffSegmentsChanged
+        Console.WriteLine("HideOffSegments property changed.")
+    End Sub
+
+    Private Sub SevenSegmentsDisplay1_SegmentsOnColorChanged(sender As Object, e As EventArgs) Handles SevenSegmentsDisplay1.SegmentsOnColorChanged
+        Console.WriteLine("SegmentsOnColor property changed.")
+    End Sub
+
+    Private Sub SevenSegmentsDisplay1_BorderStyleChanged(sender As Object, e As EventArgs) Handles SevenSegmentsDisplay1.BorderStyleChanged
+        Console.WriteLine("BorderStyle property changed.")
+    End Sub
+
+    Private Sub SevenSegmentsDisplay1_DigitsChanged(sender As Object, e As EventArgs) Handles SevenSegmentsDisplay1.DigitsChanged
+        Console.WriteLine("Digits property changed.")
+    End Sub
+
+    Private Sub SevenSegmentsDisplay1_ValueChanged(sender As Object, e As EventArgs) Handles SevenSegmentsDisplay1.ValueChanged
+        Console.WriteLine("Value property changed.")
     End Sub
 End Class
